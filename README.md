@@ -19,8 +19,29 @@ Finding a suitable dataset of astronomical images was more challenging than anti
 Due to GitHub’s size restrictions, the final dataset is hosted externally. You can access it here: [Google Drive Link](https://drive.google.com/drive/folders/1o1gHGsB3rfzVlgF-8NLJUdxz0WzPK0zq?usp=sharing).
 
 
-# system:
-i used a pretrained super resulotion cnn taken 
+## System
+
+I used a pre-trained Super-Resolution CNN from [this repository](https://github.com/Lornatang/SRCNN-PyTorch?tab=readme-ov-file). The original model was modified to include an initial bicubic interpolation layer to upscale the input image, as the original model required the input and output to have the same dimensions. it is important to note that this system processes each image channel (RGB) independently.
+
+### System Architecture
+
+The system starts with a bicubic interpolation layer that upsamples the input image from `(batch_size, 1, H, W)` to `(batch_size, 1, 2H, 2W)`. After this layer, the model includes three convolutional layers:
+
+1. **Feature Extraction Layer**: 
+   - Input size: `(batch_size, 1, 2H, 2W)`
+   - Output size: `(batch_size, 64, 2H, 2W)`
+   - This layer is followed by a ReLU activation function.
+
+2. **Non-Linear Mapping Layer**: 
+   - Input size: `(batch_size, 64, 2H, 2W)`
+   - Output size: `(batch_size, 32, 2H, 2W)`
+
+3. **Reconstruction Layer**: 
+   - Input size: `(batch_size, 32, 2H, 2W)`
+   - Output size: `(batch_size, 1, 2H, 2W)`
+
+This architecture allows the model to upsample and enhance each color channel individually, resulting in a higher-resolution output for each input channel.
+
 
 
 
