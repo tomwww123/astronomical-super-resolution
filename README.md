@@ -1,19 +1,19 @@
 # Astronomical Super-Resolution
 
 <p align="center">
-  <img src="images/original.jpg" alt="Image 1" width="30%" />
-  <img src="images/superes.jpg" alt="Image 2" width="30%" />
+  <img src="images/original.jpg" alt="Original Image" width="30%" />
+  <img src="images/superes.jpg" alt="Super-Resolved Image" width="30%" />
 </p>
 
+## Table of Contents
 
-## Table of contents
-
-- [SRCNN-PyTorch](##Background)
-- [Dataset](##Dataset)
-- [System](##System)
-    - [System Architecture](#SystemArchitecture)
-- 
-
+- [Background](#background)
+- [Dataset](#dataset)
+- [System](#system)
+  - [System Architecture](#system-architecture)
+- [Training](#training)
+- [Results](#results)
+  - [Super-Resolution Image Examples](#super-resolution-image-examples)
 
 
 ## Background
@@ -23,10 +23,10 @@ The goal of this project is to enhance low-resolution astronomical images using 
 ## Dataset
 
 <p align="center">
-  <img src="images/dataset1.jpg" alt="Image 1" width="20%" />
-  <img src="images/dataset2.jpg" alt="Image 2" width="20%" />
-  <img src="images/dataset3.jpg" alt="Image 1" width="20%" />
-  <img src="images/dataset4.jpg" alt="Image 2" width="20%" />
+  <img src="images/dataset1.jpg" alt="Dataset Image 1" width="20%" />
+  <img src="images/dataset2.jpg" alt="Dataset Image 2" width="20%" />
+  <img src="images/dataset3.jpg" alt="Dataset Image 3" width="20%" />
+  <img src="images/dataset4.jpg" alt="Dataset Image 4" width="20%" />
 </p>
 
 Finding a suitable dataset of astronomical images was more challenging than anticipated. Ultimately, I used images from the European Space Agency (ESA) archives. The dataset preparation involved several steps:
@@ -66,9 +66,8 @@ The system starts with a bicubic interpolation layer that upsamples the input im
 This architecture allows the model to upsample and enhance each color channel individually, resulting in a higher-resolution output for each input channel.
 
 <p align="center">
-  <img src="images/systems_architecture.jpg" alt="Image 1" width="80%" />
+  <img src="images/systems_architecture.jpg" alt="System Architecture" width="80%" />
 </p>
-systems_architecture
 
 ## Training
 
