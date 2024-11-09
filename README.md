@@ -7,13 +7,14 @@
 
 ## Table of Contents
 
-- [Background](#background)
+- [Overview](#overview)
 - [Dataset](#dataset)
 - [System](#system)
   - [System Architecture](#system-architecture)
 - [Training](#training)
 - [Results](#results)
   - [Super-Resolution Image Examples](#super-resolution-image-examples)
+- [Running Instructions](#running-instructions)
 
 
 ## Background
@@ -85,6 +86,20 @@ The final model achieved strong performance, with a Peak Signal-to-Noise Ratio (
   <img src="images/superes5.jpg" alt="Image 1" width="20%" />
   <img src="images/superes6.jpg" alt="Image 2" width="20%" />
 </p>
+
+## Running Instructions
+
+To run the code:
+
+1. **Clone the repository**: Download the code and save it to your preferred directory.
+2. **Download the dataset and model**: [Dataset link here](https://drive.google.com/drive/folders/1o1gHGsB3rfzVlgF-8NLJUdxz0WzPK0zq?usp=sharing). Save it to a local path and update the `config` file to reflect this path.
+3. **Configure the settings**:
+   - Set the mode in the `config` file: `"train"` to train the model and `"test"` to evaluate on test images.
+4. **Run the code**: Execute `python train.py`/ `python test.py`to start training or testing as configured.
+
+
+
+
 
 
 
