@@ -1,5 +1,14 @@
 # Astronomical Super-Resolution
 
+## Table of contents
+
+- [SRCNN-PyTorch](##Background)
+- [Dataset](##Dataset)
+- [System](##System)
+    - [System Architecture](#SystemArchitecture)
+
+
+
 ## Background
 
 The goal of this project is to enhance low-resolution astronomical images using a Convolutional Neural Network (CNN) designed for super-resolution. Given the high computational cost and large dataset typically required to train such a model from scratch, I applied transfer learning on a smaller dataset, allowing for shorter training times while still achieving effective results.
