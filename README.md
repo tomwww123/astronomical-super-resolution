@@ -1,8 +1,8 @@
 # Astronomical Super-Resolution
 
 <p align="center">
-  <img src="images/original.png" alt="Image 1" width="45%" />
-  <img src="images/superes.png" alt="Image 2" width="45%" />
+  <img src="images/original.jpg" alt="Image 1" width="30%" />
+  <img src="images/superes.jpg" alt="Image 2" width="30%" />
 </p>
 
 
@@ -12,6 +12,7 @@
 - [Dataset](##Dataset)
 - [System](##System)
     - [System Architecture](#SystemArchitecture)
+- 
 
 
 
