@@ -23,10 +23,10 @@ The goal of this project is to enhance low-resolution astronomical images using 
 ## Dataset
 
 <p align="center">
-  <img src="images/dataset1.jpg" alt="Image 1" width="30%" />
-  <img src="images/dataset2.jpg" alt="Image 2" width="30%" />
-  <img src="images/dataset3.jpg" alt="Image 1" width="30%" />
-  <img src="images/dataset4.jpg" alt="Image 2" width="30%" />
+  <img src="images/dataset1.jpg" alt="Image 1" width="20%" />
+  <img src="images/dataset2.jpg" alt="Image 2" width="20%" />
+  <img src="images/dataset3.jpg" alt="Image 1" width="20%" />
+  <img src="images/dataset4.jpg" alt="Image 2" width="20%" />
 </p>
 
 Finding a suitable dataset of astronomical images was more challenging than anticipated. Ultimately, I used images from the European Space Agency (ESA) archives. The dataset preparation involved several steps:
@@ -64,6 +64,14 @@ The system starts with a bicubic interpolation layer that upsamples the input im
    - Output size: `(batch_size, 1, 2H, 2W)`
 
 This architecture allows the model to upsample and enhance each color channel individually, resulting in a higher-resolution output for each input channel.
+
+## Training
+
+During training, I fine-tuned the model’s parameters using transfer learning and added a data augmentation layer to improve generalization. The augmentations included random horizontal and vertical flips, as well as rotations up to 10 degrees. This helped the model adapt to various image orientations and details, enhancing its performance on unseen data. Training was conducted over 1,022 epochs, allowing the model to converge effectively while avoiding overfitting.
+
+## Results
+
+The final model achieved strong performance, with a Peak Signal-to-Noise Ratio (PSNR) of **32.42 dB** and a Structural Similarity Index Measure (SSIM) of **0.8134**. These metrics indicate that the model successfully enhanced image quality and preserved structural details, achieving results comparable to or better than standard bicubic interpolation in terms of both clarity and fidelity.
 
 
 
