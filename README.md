@@ -78,6 +78,18 @@ During training, I fine-tuned the model’s parameters using transfer learning a
 
 The final model achieved strong performance, with a Peak Signal-to-Noise Ratio (PSNR) of **32.42 dB** and a Structural Similarity Index Measure (SSIM) of **0.8134**. These metrics indicate that the model successfully enhanced image quality and preserved structural details, achieving results comparable to or better than standard bicubic interpolation in terms of both clarity and fidelity.
 
+## low res images vs super res images:
+
+### low res images:
+
+<p align="center">
+  <img src="images/lowres1.jpg" alt="Image 1" width="20%" />
+  <img src="images/lowres2.jpg" alt="Image 2" width="20%" />
+  <img src="images/lowres3.jpg" alt="Image 1" width="20%" />
+  <img src="images/lowres4.jpg" alt="Image 2" width="20%" />
+</p>
+
+### super res images:
 
 <p align="center">
   <img src="images/superes3.jpg" alt="Image 1" width="20%" />
