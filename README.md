@@ -22,6 +22,13 @@ The goal of this project is to enhance low-resolution astronomical images using 
 
 ## Dataset
 
+<p align="center">
+  <img src="images/dataset1.jpg" alt="Image 1" width="30%" />
+  <img src="images/dataset2.jpg" alt="Image 2" width="30%" />
+  <img src="images/dataset3.jpg" alt="Image 1" width="30%" />
+  <img src="images/dataset4.jpg" alt="Image 2" width="30%" />
+</p>
+
 Finding a suitable dataset of astronomical images was more challenging than anticipated. Ultimately, I used images from the European Space Agency (ESA) archives. The dataset preparation involved several steps:
 
 1. **Data Download**: The images were downloaded using a script located at `data/image_downloader.py`.
