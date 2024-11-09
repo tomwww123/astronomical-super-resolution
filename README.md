@@ -65,6 +65,11 @@ The system starts with a bicubic interpolation layer that upsamples the input im
 
 This architecture allows the model to upsample and enhance each color channel individually, resulting in a higher-resolution output for each input channel.
 
+<p align="center">
+  <img src="images/systems_architecture.jpg" alt="Image 1" width="80%" />
+</p>
+systems_architecture
+
 ## Training
 
 During training, I fine-tuned the model’s parameters using transfer learning and added a data augmentation layer to improve generalization. The augmentations included random horizontal and vertical flips, as well as rotations up to 10 degrees. This helped the model adapt to various image orientations and details, enhancing its performance on unseen data. Training was conducted over 1,022 epochs, allowing the model to converge effectively while avoiding overfitting.
