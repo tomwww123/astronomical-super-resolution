@@ -92,7 +92,7 @@ The final model achieved strong performance, with a Peak Signal-to-Noise Ratio (
 To run the code:
 
 1. **Clone the repository**: Download the code and save it to your preferred directory.
-2. **Download the dataset and model**: [Dataset link here](https://drive.google.com/drive/folders/1o1gHGsB3rfzVlgF-8NLJUdxz0WzPK0zq?usp=sharing). Save it to a local path and update the `config` file to reflect this path.
+2. **Download the dataset and model**: [link here](https://drive.google.com/drive/folders/1o1gHGsB3rfzVlgF-8NLJUdxz0WzPK0zq?usp=sharing). Save it to a local path and update the `config` file to reflect this path.
 3. **Configure the settings**:
    - Set the mode in the `config` file: `"train"` to train the model and `"test"` to evaluate on test images.
 4. **Run the code**: Execute `python train.py`/ `python test.py`to start training or testing as configured.
