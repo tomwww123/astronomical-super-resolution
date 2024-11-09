@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="images/original.jpg" alt="Original Image" width="30%" />
-  <img src="images/superes.jpg" alt="Super-Resolved Image" width="30%" />
+  <img src="images/superes1.jpg" alt="Super-Resolved Image" width="30%" />
 </p>
 
 ## Table of Contents
